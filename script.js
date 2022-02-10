@@ -35,7 +35,7 @@ output1.addEventListener('click', () => {
             clearInterval(temp)
         }, 600)
     } else {
-        alert("First Generate a Password!")
+        alert("First hit the Generate  Password  Button!")
     }
 })
 
@@ -48,7 +48,7 @@ output2.addEventListener('click', () => {
             clearInterval(temp)
         }, 600)
     } else {
-        alert("First Generate a Password!")
+        alert("First hit the Generate  Password  Button!")
     }
 })
 
@@ -61,7 +61,7 @@ output3.addEventListener('click', () => {
             clearInterval(temp)
         }, 600)
     } else {
-        alert("First Generate a Password!")
+        alert("First hit the Generate  Password  Button!")
     }
 })
 
@@ -74,7 +74,7 @@ output4.addEventListener('click', () => {
             clearInterval(temp)
         }, 600)
     } else {
-        alert("First Generate a Password!")
+        alert("First hit the Generate  Password  Button!")
     }
 })
 
