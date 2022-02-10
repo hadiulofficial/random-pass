@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #1c1c1c;
+  --main-color: #1f2937;
+  --sub-color: #273549;
+  --text-green: #4adf86;
+  --bg-green: #10b981;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  max-width: 550px;
+  background-color: var(--main-color);
+  border-radius: 4px;
+  padding: 3rem;
+}
+
+.mb-m {
+  margin-bottom: 2rem;
+}
+
+p {
+  color: #d5d4d8;
+  font-size: 1.25rem;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
+
+.green {
+  color: var(--text-green);
+}
+
+button {
+  background-color: var(--bg-green);
+  border: none;
+  width: 13.94rem;
+  height: 2.63rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.devider {
+  height: 1px;
+  background-color: #2f3e53;
+}
+
+.output-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+input {
+  border: none;
+  text-align: center;
+}
+
+.output-wrap__box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.output-box {
+  height: 2.5rem;
+  width: 100%;
+  background-color: var(--sub-color);
+  border-radius: 5px;
+  background-image: url(./images/Icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color: var(--text-green);
+}
+
+.copied-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-1em);
+    color: #4adf86;
+    transition: all 0.5s;
+  }
+
+.copied.copied-text {
+  opacity: 1;
+  transform: translateY(-1.5em);
+}
